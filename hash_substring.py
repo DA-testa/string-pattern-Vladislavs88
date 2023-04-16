@@ -6,11 +6,11 @@ def read_input():
     teksts=input().strip()
     if "F" in teksts:
         with open("tests/06") as file:
-            teksts1=file.readline().strip()
-            teksts2=file.readline().strip()
+            teksts1=file.readline().rstrip()
+            teksts2=file.readline().rstrip()
     if "I" in teksts:
-        teksts1=input().strip()
-        teksts2=input().strip()
+        teksts1=input().rstrip()
+        teksts2=input().rstrip()
     return teksts1,teksts2
         
     
