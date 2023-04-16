@@ -32,9 +32,7 @@ def print_occurrences(fails):
     print(' '.join(map(str, fails)))
 
 def get_occurrences(teksts1, teksts2):
-    # this function should find the occurances using Rabin Karp alghoritm 
-
-    # and return an iterable variable
+    # this function should find the occurances using Rabin Karp alghoritm and return an iterable variable at same time
     return [i for i in range(len(teksts2)-len(teksts1)+1)if teksts2[i:i+len(teksts1)]==teksts1]
 
 
