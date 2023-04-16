@@ -11,6 +11,9 @@ def read_input():
     if "I" in teksts:
         teksts1=input().rstrip()
         teksts2=input().rstrip()
+    else:
+        print("wrong command")
+        return
     return teksts1,teksts2
         
     
@@ -39,7 +42,5 @@ def get_occurrences(teksts1, teksts2):
 if __name__ == '__main__':
     teksts3=get_occurrences(*read_input())
     print_occurrences(teksts3)
-#     teksts1,teksts2=read_input()
-#     teksts3=get_occurrences(teksts1, teksts2)
-#     print_occurrences(teksts3)
+
 
