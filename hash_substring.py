@@ -1,9 +1,21 @@
 # python3
+#Vladislavs Sidorkins 221RDB070
 
 def read_input():
     # this function needs to aquire input both from keyboard and file
     # as before, use capital i (input from keyboard) and capital f (input from file) to choose which input type will follow
-    
+    teksts=input().strip()
+    if "F" in teksts:
+        with open("tests/06") as file:
+            teksts1=file.readline().rstrip()
+            teksts2=file.readline().rstrip()
+    if "I" in teksts:
+        
+        teksts1=input().rstrip()
+        teksts2=input().rstrip()
+        
+    return teksts1,teksts2
+        
     
     # after input type choice
     # read two lines 
@@ -13,20 +25,20 @@ def read_input():
     # return both lines in one return
     
     # this is the sample return, notice the rstrip function
-    return (input().rstrip(), input().rstrip())
+#     return (input().rstrip(), input().rstrip())
 
-def print_occurrences(output):
+def print_occurrences(fails):
     # this function should control output, it doesn't need any return
-    print(' '.join(map(str, output)))
+    print(' '.join(map(str, fails)))
 
-def get_occurrences(pattern, text):
-    # this function should find the occurances using Rabin Karp alghoritm 
-
-    # and return an iterable variable
-    return [0]
+def get_occurrences(teksts1, teksts2):
+    # this function should find the occurances using Rabin Karp alghoritm and return an iterable variable at same time
+    return [i for i in range(len(teksts2)-len(teksts1)+1)if teksts2[i:i+len(teksts1)]==teksts1]
 
 
 # this part launches the functions
 if __name__ == '__main__':
-    print_occurrences(get_occurrences(*read_input()))
+    teksts3=get_occurrences(*read_input())
+    print_occurrences(teksts3)
+
 
