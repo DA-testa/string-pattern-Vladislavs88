@@ -9,11 +9,12 @@ def read_input():
             teksts1=file.readline().rstrip()
             teksts2=file.readline().rstrip()
     if "I" in teksts:
+        
         teksts1=input().rstrip()
         teksts2=input().rstrip()
-    else:
-        print("wrong command")
-        return None
+        else:
+           print("wrong command")
+           return None
     return teksts1,teksts2
         
     
