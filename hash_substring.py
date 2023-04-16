@@ -12,9 +12,7 @@ def read_input():
         
         teksts1=input().rstrip()
         teksts2=input().rstrip()
-        else:
-           print("wrong command")
-           return None
+        
     return teksts1,teksts2
         
     
