@@ -26,9 +26,9 @@ def read_input():
     # this is the sample return, notice the rstrip function
 #     return (input().rstrip(), input().rstrip())
 
-def print_occurrences(output):
+def print_occurrences(fails):
     # this function should control output, it doesn't need any return
-    print(' '.join(map(str, output)))
+    print(' '.join(map(line, fails)))
 
 def get_occurrences(teksts1, teksts2):
     # this function should find the occurances using Rabin Karp alghoritm 
