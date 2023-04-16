@@ -37,7 +37,7 @@ def get_occurrences(teksts1, teksts2):
 
 # this part launches the functions
 if __name__ == '__main__':
-    teksts3=get_occurrences(read_input())
+    teksts3=get_occurrences(*read_input())
     print_occurrences(teksts3)
 #     teksts1,teksts2=read_input()
 #     teksts3=get_occurrences(teksts1, teksts2)
