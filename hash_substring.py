@@ -28,7 +28,7 @@ def read_input():
 
 def print_occurrences(fails):
     # this function should control output, it doesn't need any return
-    print(' '.join(map(line, fails)))
+    print(' '.join(map(str, fails)))
 
 def get_occurrences(teksts1, teksts2):
     # this function should find the occurances using Rabin Karp alghoritm 
